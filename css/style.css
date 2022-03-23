@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;  
+}
+
+
+html{
+    font-size: 62,5%;
+}
+
+header{
+    color:red);
+}
+body{
+    background-color: white;
+}
+
+h1,h2,h3{
+    background-color:green;
+    font-family: cursive;
+}
+section article p{
+    color: rgb(200, 200, 200);
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: black;
+}
+
+header nav{
+    background-color:black;
+}
+
+
+nav{
+    text-decoration: none;
+    background-color: rgba(238, 188, 247, .5);
+    color: rgba(143, 143, 143, 8);
+}
+
+nav ul{
+    list-style: none;
+    color: rgba(195, 190, 190, .8);
+    text-decoration: none;
+    background-color: white;
+}
+
+nav ul li{
+    animation: none;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+nav ul li a{
+    font-size: 2rem;
+    color: lightblue;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover{
+    font-weight: 600;
+    color: black;
+}
+
+
+
+/* inica camelcase */
+
+.textdestacado{
+    background-color: rgba(143, 143, 143, 8);
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.textbold{
+    font-weight: 500;
+}
+
+.textright{
+    text-align: right;
+}
+
+.textleft{
+    text-align: left;
+}
+
+.bglight{
+    background-color: rgba(195, 190, 190, .8);
+}
+
+.bgdark{
+    background-color: rgba(238, 188, 247, .5);
+}
+
+/* clases BEM */
+
+.encabezado__box--white{
+    text-align:center;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 40px;
+    padding: 20px;
+}
+
+.encabezado__img--fluid{
+    width: 100%;
+}
+
+.novedades__titulo--xxl{
+    font-size: 5rem;
+}
+
+.novedades__titulo--xl{
+    font-size: 3rem;
+}
+
+.novedades__titulo--md{
+    font-size: 2rem;
+}
+
+
+
+.novedades__articulo{
+    height:auto ;
+    width: 90%;
+    overflow-y: hidden;
+/*margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin: 10px 20px 30px 15px;*/
+    margin: 10px auto;
+    /* padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 40px; */
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border: solid 2rem pink;
+    flex-direction:row;
+    display: flex;
+ }   
+
+ .pie{
+     padding: 30px o;
+ }
+
+ .pie a{
+     text-decoration: none;
+ }
+
+ .pie__icom--sm{
+     width: 40px;
+ }
+
+ .pie__titulo--md{
+     font-size: 2rem;
+     margin-left: 50px;
+     display: inline-block;
+ }
