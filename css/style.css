@@ -8,13 +8,17 @@
 }
 
 
-html{
-    font-size: 62,5%;
-}
 
 header{
-    color:red);
+    color:red;
 }
+
+.logo-calabera {
+    width: 100px;
+    height: 70px;
+}
+
+
 body{
     background-color: white;
 }
