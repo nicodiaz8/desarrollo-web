@@ -10,74 +10,102 @@
 
 
 header{
-    color:red;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 20px;
+   background-image: linear-gradient(rgb(10, 109, 10), rgb(30, 65, 77));
 }
 
-.logo-calabera {
-    width: 100px;
-    height: 70px;
+.logo-delta {
+    width: 170px;
+    height: 100px;
+    border-radius: 40px;
 }
 
 
-body{
-    background-color: white;
-}
+
+ body{
+    background-image: linear-gradient(rgb(67, 67, 201), rgb(21, 121, 21));
+} 
 
 h1,h2,h3{
-    background-color:green;
     font-family: cursive;
-}
-section article p{
-    color: rgb(200, 200, 200);
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 3rem;
     color: black;
 }
 
-header nav{
-    background-color:black;
+
+section article p{
+    color: rgb(200, 200, 200);
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 2rem;
+    color: black;
 }
 
 
-nav{
-    text-decoration: none;
-    background-color: rgba(238, 188, 247, .5);
-    color: rgba(143, 143, 143, 8);
-}
-
-nav ul{
+ nav ul{
     list-style: none;
-    color: rgba(195, 190, 190, .8);
+    color: black;
     text-decoration: none;
-    background-color: white;
-}
+} 
 
 nav ul li{
     animation: none;
     font-size: 2rem;
     text-decoration: none;
+    margin-left: 15px;
 }
 
 nav ul li a{
     font-size: 2rem;
-    color: lightblue;
+    color: white;
     font-family: sans-serif;
     text-decoration: none;
 }
 
 
-nav ul li a:hover{
+ nav ul li a:hover{
     font-weight: 600;
     color: black;
+} 
+
+footer{
+    background-color: blue;
 }
 
 
+#contenedor-grid{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "one" "two" "three" "four" "five";
+}
 
+
+@media (min-widht 768){
+    #contenedor-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20vh 60vh 20vh;
+        grid-template-areas: "one" "two" "three" "four" "five";
+    }
+}
+
+@media (min-widht){
+    #contenedor-grid{
+        grid-template-columns: 50vw 25vw 50vw;
+        grid-template-rows: 25vh 50vh 30vh;
+        grid-template-areas: "one one one"
+        "two three three" "two four fie";
+    }
+}
 /* inica camelcase */
 
 .textdestacado{
     background-color: rgba(143, 143, 143, 8);
+    text-decoration: none;
 }
 
 .textcenter{
@@ -85,7 +113,7 @@ nav ul li a:hover{
 }
 
 .textbold{
-    font-weight: 500;
+    font-weight: 100;
 }
 
 .textright{
@@ -106,7 +134,7 @@ nav ul li a:hover{
 
 /* clases BEM */
 
-.encabezado__box--white{
+ .encabezado__box--white{
     text-align:center;
     flex-direction: column;
     display: flex;
@@ -114,18 +142,18 @@ nav ul li a:hover{
     flex-direction: row;
     margin: 40px;
     padding: 20px;
-}
+} 
 
 .encabezado__img--fluid{
     width: 100%;
 }
 
 .novedades__titulo--xxl{
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
 .novedades__titulo--xl{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .novedades__titulo--md{
